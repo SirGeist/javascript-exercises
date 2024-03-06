@@ -10,9 +10,12 @@ const sumAll = function (num1, num2) {
   }
 
   // Checks whether num1 or num2 are not ints or negatives
-  if (typeof sum != typeof num1 || typeof sum != typeof num2) {
-    return "ERROR";
-  } else if (num1 < 0 || num2 < 0) {
+  if (
+    typeof sum != typeof num1 ||
+    typeof sum != typeof num2 ||
+    num1 < 0 ||
+    num2 < 0
+  ) {
     return "ERROR";
   }
 
